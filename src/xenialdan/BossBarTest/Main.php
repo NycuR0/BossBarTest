@@ -41,7 +41,7 @@ class Main extends PluginBase implements Listener{
 	public function sendBossBar(){
 		if($this->eid === null) return;
 		foreach($this->getServer()->getDefaultLevel()->getPlayers() as $player){
-			API::setTitle(TextFormat::YELLOW . 'MCPE' . TextFormat::RED . '.' . TextFormat::AQUA . 'Minecraft-Romania' . TextFormat::RED . '.' . TextFormat::GREEN 'Ro', $this->eid);
+			API::setTitle(TextFormat::YELLOW . 'MCPE' . TextFormat::RED . '.' . TextFormat::AQUA . 'Minecraft-Romania' . TextFormat::RED . '.' . TextFormat::GREEN . 'Ro', $this->eid);
 			API::setPercentage(100, $this->eid);
 		}
 	}
